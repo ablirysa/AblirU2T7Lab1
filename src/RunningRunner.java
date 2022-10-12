@@ -27,25 +27,25 @@ public class RunningRunner {
         int str2len = str2.length();
         if (str1len > str2len) {
             System.out.println(str1 + " is longer");
-        } else if {
+        } else if (str1len < str2len) {
             System.out.println(str2 + " is longer");
         } else {
             System.out.println("Both strings have the length");
         }
 
-        // equal stuff
+        // equal/compareTo
         if (str1.equals(str2)) {
             System.out.println("Both strings have the exact same characters");
         } else {
-            int compare = str1.compareTo(str2);
-            if (compare < 0) {
+            int alp = str1.compareTo(str2);
+            if (alp < 0) {
                 System.out.println(str1 + " is first alphabetically");
             } else {
                 System.out.println(str2 + " is first alphabetically");
             }
         }
 
-        // found in each other?
+        // found in each other
         int indexOfStr2 = str1.indexOf(str2);
         if (indexOfStr2 != -1) {
             System.out.println(str2 + " is found in " + str1);
